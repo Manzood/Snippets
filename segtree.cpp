@@ -3,7 +3,7 @@ using namespace std;
 
 const int inf = 1e9 + 7;
 
-struct segtree {
+struct segtree { // ZERO BASED INDEXING
     int size;
     vector <long long> sum;
     vector <long long> m;

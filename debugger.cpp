@@ -1,7 +1,6 @@
 #include "bits/stdc++.h"
 using namespace std;
 
-
 vector<string> vec_splitter(string s) {
     s += ','; vector<string> res;
     while(!s.empty()) {
