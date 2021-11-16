@@ -1,7 +1,7 @@
 #include "bits/stdc++.h"
 using namespace std;
 
-const int inf = 1e9 + 7;
+const int inf = (int) 1e9 + 7;
 
 struct segtree { // ZERO BASED INDEXING
     int size;
@@ -16,7 +16,7 @@ struct segtree { // ZERO BASED INDEXING
         mx.assign(2*size-1, -inf);
     }
     void build (vector <int>& a) {
-        int n = a.size();
+        int n = (int) a.size();
         int numzeroes = size-n;
         int counter = 0;
         for (int i = 2*size-2; i >= 0; i--) {

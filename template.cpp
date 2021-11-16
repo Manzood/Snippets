@@ -1,6 +1,12 @@
 #include "bits/stdc++.h"
+
+#ifdef local
+    #include "custom/debugger.h"
+#else
+    #define debug(x) 42;
+#endif
+
 using namespace std;
-#define debug(x) cout << #x << " = " << x << endl;
 #define int long long
 
 int32_t main () {
@@ -10,3 +16,4 @@ int32_t main () {
 
     }
 }
+

@@ -15,4 +15,3 @@ int getpow (int a, int b) {
 		return (((a * t) % mod) * t) % mod;
 	}
 }
-
