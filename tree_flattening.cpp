@@ -21,7 +21,7 @@ void dfs_flattening(int node, vector<int> &a, vector<vector<int>> &adj, vector<i
 
 int main () {
     // flatten the tree
-    int n;
+    int n = 1;
     vector <int> a(n);      // contains the values for nodes
     vector <vector <int>> adj(n);       // stores graph
 
