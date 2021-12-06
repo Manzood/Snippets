@@ -7,16 +7,16 @@
 using namespace std;
 
 #define int long long
-const int mod = (int) 1e9 + 7;
+const int mod = (int)1e9 + 7;
 
-void testcase () {
+void testcase() {
 
 }
 
-int32_t main () {
+int32_t main() {
     int t;
     cin >> t;
-    while (t--) {
-        testcase ();
+    while(t) {
+        testcase();
     }
 }

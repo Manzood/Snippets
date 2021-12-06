@@ -95,3 +95,4 @@ struct segtree {  // ZERO BASED INDEXING
         return max(s1, s2);
     }
 };
+
