@@ -1,5 +1,6 @@
 #include "bits/stdc++.h"
 using namespace std;
+
 // TODO: write a smaller, more readable and flexible segtree
 // TODO 2: look into advanced segtree concepts
 
@@ -95,4 +96,3 @@ struct segtree {  // ZERO BASED INDEXING
         return max(s1, s2);
     }
 };
-
