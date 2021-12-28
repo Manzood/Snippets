@@ -2,7 +2,7 @@
 using namespace std;
 
 // TODO: write a smaller, more readable and flexible segtree
-// TODO 2: look into advanced segtree concepts
+// TODO #2: look into advanced segtree concepts
 
 const int inf = (int)1e9 + 7;
 
