@@ -7,7 +7,7 @@
 using namespace std;
 
 #define int long long
-const int mod = (int)1e9 + 7;
+constexpr int mod = (int)1e9 + 7;
 
 void testcase() {
 
