@@ -7,10 +7,14 @@
 using namespace std;
 #define int long long
 
-int32_t main() {
-    int t;
-    cin >> t;
-    while (t--) {
+void solve(int test_no) {
 
+}
+
+int32_t main() {
+    int t = 1;
+    cin >> t;
+    for (int tt = 1; tt <= t; tt++) {
+        solve(tt);
     }
 }

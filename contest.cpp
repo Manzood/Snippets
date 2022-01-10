@@ -9,14 +9,14 @@ using namespace std;
 #define int long long
 constexpr int mod = (int)1e9 + 7;
 
-void testcase() {
+void testcase(int test_no) {
 
 }
 
 int32_t main() {
     int t;
     cin >> t;
-    while(t--) {
-        testcase();
+    for (int tt = 1; tt <= t; tt++) {
+        testcase(tt);
     }
 }
