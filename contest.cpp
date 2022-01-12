@@ -9,7 +9,7 @@ using namespace std;
 #define int long long
 constexpr int mod = (int)1e9 + 7;
 
-void testcase(int test_no) {
+void testcase() {
 
 }
 
@@ -17,6 +17,6 @@ int32_t main() {
     int t;
     cin >> t;
     for (int tt = 1; tt <= t; tt++) {
-        testcase(tt);
+        testcase();
     }
 }

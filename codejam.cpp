@@ -8,7 +8,7 @@ using namespace std;
 #define int long long
 constexpr int mod = (int) 1e9 + 7;
 
-void testcase(int test_no) {
+void testcase() {
 
 }
 
@@ -17,7 +17,7 @@ int32_t main() {
     cin >> t;
     for (int tt = 1; tt <= t; tt++) {
         printf("Case #%lld: ", tt);
-        testcase(tt);
+        testcase();
         printf("\n");
     }
 }

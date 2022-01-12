@@ -7,7 +7,7 @@
 using namespace std;
 #define int long long
 
-void solve(int test_no) {
+void solve() {
 
 }
 
@@ -15,6 +15,6 @@ int32_t main() {
     int t = 1;
     cin >> t;
     for (int tt = 1; tt <= t; tt++) {
-        solve(tt);
+        solve();
     }
 }
