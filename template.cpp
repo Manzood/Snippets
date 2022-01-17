@@ -1,9 +1,11 @@
 #include "bits/stdc++.h"
+
 #ifdef local
-    #include "custom/debugger.h"
+#include "custom/debugger.h"
 #else
-    #define debug(x) 42;
+#define debug(...) 42;
 #endif
+
 using namespace std;
 #define int long long
 
