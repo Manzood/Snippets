@@ -3,8 +3,6 @@ using namespace std;
 
 constexpr int mod = (int)1e9 + 7;
 
-// got most of this code from two of Errichto's videos, iirc
-
 int getpow(int a, int b) {
     if (b == 0) return 1;
     if (b == 1) return a;
@@ -17,7 +15,8 @@ int getpow(int a, int b) {
     }
 }
 
-// (a / b) % MOD = a * ((b ^ (MOD - 2)) % MOD; // ONLY if MOD is prime
+// (a / b) % MOD = a * ((b ^ (MOD - 2)) % MOD;
+// ONLY works if MOD is prime
 int divide(int a, int b) { return a * getpow(b, mod - 2) % mod; }
 
 // finding the modular inverse of every number modulo mod

@@ -9,7 +9,7 @@
 using namespace std;
 #define int long long
 
-void solve() {
+void solve([[maybe_unused]] int test) {
 
 }
 
@@ -17,6 +17,6 @@ int32_t main() {
     int t = 1;
     cin >> t;
     for (int tt = 1; tt <= t; tt++) {
-        solve();
+        solve(tt);
     }
 }

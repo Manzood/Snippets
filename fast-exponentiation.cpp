@@ -15,11 +15,11 @@ double getpow (double a, int b) {
 }
 
 // long long intgers
-long long power (long long a, long long b) {
-	int result = 1;
+long long power (long long a, long long b, long long m) {
+	long long result = 1;
 	while (b) {
-		if (b % 2 == 1) result *= a;
-		a *= a;
+		if (b % 2 == 1) result = result * a % m;
+		a = a * a % m;
 		b /= 2;
 	}
 	return result;

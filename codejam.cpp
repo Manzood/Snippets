@@ -10,7 +10,7 @@ using namespace std;
 #define int long long
 constexpr int mod = (int) 1e9 + 7;
 
-void solve() {
+void solve([[maybe_unused]] int test) {
 
 }
 
@@ -19,7 +19,7 @@ int32_t main() {
     cin >> t;
     for (int tt = 1; tt <= t; tt++) {
         printf("Case #%lld: ", tt);
-        solve();
+        solve(tt);
         printf("\n");
     }
 }
