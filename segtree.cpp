@@ -11,7 +11,8 @@ struct segtree {  // ZERO BASED INDEXING
     vector<long long> sum;
     vector<long long> m;
     vector<long long> mx;
-    void init(int n) {  // just making our size a power of two
+    segtree(int n) {
+        // makes size a power of two greater than n
         size = 1;
         while (size < n) size *= 2;
         sum.assign(2 * size - 1, 0);
