@@ -3,6 +3,13 @@ using namespace std;
 
 constexpr int mod = (int)1e9 + 7;
 
+// https://codeforces.com/blog/entry/23365
+// calculates inv of a wrt m, same complexity as the extended euclidean algo
+// a and m most be positive coprime integers
+long long inv(long long a, long long m) {
+    return 1 < a ? m - inv(m % a, a) * m / a : 1;
+}
+
 int getpow(int a, int b) {
     if (b == 0) return 1;
     if (b == 1) return a;
@@ -17,6 +24,7 @@ int getpow(int a, int b) {
 
 // (a / b) % MOD = a * ((b ^ (MOD - 2)) % MOD;
 // ONLY works if MOD is prime
+// if they're coprime, you'll probably need the euler's totient function
 int divide(int a, int b) { return a * getpow(b, mod - 2) % mod; }
 
 // finding the modular inverse of every number modulo mod
@@ -27,7 +35,6 @@ void getmod(vector<int>& inv) {
         inv[i] = mod - (mod / i) * inv[mod % i] % mod;
     }
 }
-
 
 // refer to https://cp-algorithms.com/algebra/module-inverse.html
 
