@@ -5,7 +5,7 @@ constexpr int mod = (int)1e9 + 7;
 
 // https://codeforces.com/blog/entry/23365
 // calculates inv of a wrt m, same complexity as the extended euclidean algo
-// a and m most be positive coprime integers
+// a and m must be positive coprime integers
 long long inv(long long a, long long m) {
     return 1 < a ? m - inv(m % a, a) * m / a : 1;
 }

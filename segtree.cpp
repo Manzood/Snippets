@@ -6,13 +6,13 @@ using namespace std;
 
 const int inf = (int)1e9 + 7;
 
-struct segtree {  // ZERO BASED INDEXING
+struct segtree {  // zero based indexing
     int size;
     vector<long long> sum;
     vector<long long> m;
     vector<long long> mx;
     segtree(int n) {
-        // makes size a power of two greater than n
+        // makes size a power of two GE n
         size = 1;
         while (size < n) size *= 2;
         sum.assign(2 * size - 1, 0);
@@ -58,7 +58,6 @@ struct segtree {  // ZERO BASED INDEXING
         sum[x] = sum[2 * x + 1] + sum[2 * x + 2];
         m[x] = min(m[2 * x + 1], m[2 * x + 2]);
         mx[x] = max(mx[2 * x + 1], mx[2 * x + 2]);
-        return;
     }
     long long getsum(int left, int right) {  // returns sum between indexes
                                              // [left, right - 1], inclusive
